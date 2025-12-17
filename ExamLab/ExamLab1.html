@@ -6,38 +6,80 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>สมัคร</h1>
-        <p>ง่ายและเร็ว</p>
-    </header>
-    <p>___________________________________________________________________________</p>
+    
+ <table align="center" border="1" width="400px">
+    <tr>
 
-        <form action="#" method="post">
-                <label>ชื่อ</label>
-                <input type="text" name="name" required>
-                <label>นามสกุล</label>
-                <input type="text" name="name" required><br>               
-                <label>หมายเลขโทรศัพท์</label>
-                <input type="tel" name="tel" required><br> 
-                <label>รหัสผ่านใหม่</label>
-                <input type="password" name="password" required><br> 
-                <br></br>  
+        <td>
+        <font face="tahoma" size="5"> สมัคร</font><br>
+        <font face="tahoma" size="2" color="#606770" >ง่ายและเร็ว</font>
+     
+        <hr>
+        
+         <table align="center"  border="1"  width="400px" >
+            <form>
+            <tr>             
+                <td><input type="text" placeholder="ชื่อ" ></td>
+                <td><input type="text" placeholder="นามสกุล"> </td>
+                   
+            </tr>
+            <tr><td><input type="tel" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" size="30"required></td> </tr> 
+            <tr><td> <input type="password" placeholder="รหัสผ่านใหม่" size="30" required></td> </tr> 
 
-                <label>วันเกิด</label>  
-                <br></br>     
-                <input type="date" name="date" required><br>
-                <br></br>  
+            <tr><td> 
+                <br> 
+                 <font face="tahoma" size="2" color="#606770" >วันเกิด</font>
+                <br> 
+                <select name="date"  placeholder="วัน" >
+                    <option>1</option>
+                    <option></option>
+                    <option></option>            
+                 </select>
+                <select name="date"  placeholder="เดือน" >
+                    <option>มกราคม</option>
+                    <option>กุมภาพันธ์</option>
+                    <option>มีนาคม</option> 
+                    <option>เมษายน</option> 
+                    <option>พฤษภาคม</option>               
+                    <option>มิถุนายน</option> 
+                    <option>กรกฏาคม</option> 
+                    <option>สิงหาคม</option> 
+                    <option>กันยายน</option> 
+                    <option>ตุลาคม</option> 
+                    <option>พฤศจิกายน</option> 
+                    <option>ธันวาคม</option> 
+                </select>
+                <select name="date"  placeholder="ปี" >
+                    <option>2568</option>
+                    <option>2569</option>
+                </select>
+                    <br>
+                <br> 
+            </td> </tr> 
+ <tr> 
+                <br> 
+                 <tr><td><font face="tahoma" size="2" color="#606770" >เพศ</font><tr><td>
+      
+                    <tr>
+                         <td><input type="radio" name="gender" value="male"> ชาย 
+                         </td> 
+                         <td><input type="radio" name="gender" value="female"> หญิง 
+                         </td> 
+                    </tr>
 
-                <label>เพศ</label> 
-                <br></br> 
-                <input type="checkbox" name="gender" value="male"> ชาย
-                 <input type="checkbox" name="gender" value="female"> หญิง
-
-                <p>เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบาย คุกกี้ของเรา คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา และสามารถเลือก ไม่รับได้ในภายหลัง</p>
-
-                    <th colspan="2"><input type="submit" value="สมัคร"></th>
-
+                </tr> 
                 
+                 
+         </table>
+        
+         <p>เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบาย คุกกี้ของเรา คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา และสามารถเลือก ไม่รับได้ในภายหลัง</p>
+         
+        </td>
+    </tr>
+       
+            <th colspan="2" style="background-color: green;"> <input type="submit" value="สมัคร"></th>
             </form>
+    </table>
+
 </body>
-</html>	
+</html>
