@@ -6,79 +6,123 @@
     <title>Document</title>
 </head>
 <body>
-    
- <table align="center" border="1" width="400px">
-    <tr>
 
-        <td>
-        <font face="tahoma" size="5"> สมัคร</font><br>
-        <font face="tahoma" size="2" color="#606770" >ง่ายและเร็ว</font>
-     
-        <hr>
-        
-         <table align="center"  border="1"  width="400px" >
-            <form>
-            <tr>             
-                <td><input type="text" placeholder="ชื่อ" ></td>
-                <td><input type="text" placeholder="นามสกุล"> </td>
-                   
+    <table align="center" border="0" width="400px">
+        <form>
+            <tr>
+                <td>
+                    <font face="tahoma" size="5"> สมัคร</font><br>
+                    <font face="tahoma" size="2" color="#606770">ง่ายและเร็ว</font>
+                    <hr>
+                    
+                    <table align="center" border="0" width="100%">
+                        <tr>
+                            <td><input type="text" placeholder="ชื่อ"></td>
+                            <td><input type="text" placeholder="นามสกุล"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="tel" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" size="30" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="password" placeholder="รหัสผ่านใหม่" size="30" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <br>
+                                <font face="tahoma" size="2" color="#606770">วันเกิด</font>
+                                <br>
+                                <select name="date">
+                                    <option>1</option>
+   									<option>2</option>
+   									<option>3</option>
+    								<option>4</option>
+    								<option>5</option>
+   									<option>6</option>
+    								<option>7</option>
+    								<option>8</option>
+    								<option>9</option>
+    								<option>10</option>
+    								<option>11</option>
+    								<option>12</option>
+   			 						<option>13</option>
+    								<option>14</option>
+    								<option>15</option>
+    								<option>16</option>
+    								<option>17</option>
+    								<option>18</option>
+    								<option>19</option>
+   						 			<option>20</option>
+    								<option>21</option>
+    								<option>22</option>
+    								<option>23</option>
+    								<option>24</option>
+    								<option>25</option>
+    								<option>26</option>
+    								<option>27</option>
+    								<option>28</option>
+    								<option>29</option>
+    								<option>30</option>
+    								<option>31</option>
+                                </select>
+                                <select name="month">
+                                    <option>มกราคม</option>
+                                    <option>กุมภาพันธ์</option>
+                                    <option>มีนาคม</option>
+                                    <option>เมษายน</option>
+                                    <option>พฤษภาคม</option>
+                                    <option>มิถุนายน</option>
+                                    <option>กรกฏาคม</option>
+                                    <option>สิงหาคม</option>
+                                    <option>กันยายน</option>
+                                    <option>ตุลาคม</option>
+                                    <option>พฤศจิกายน</option>
+                                    <option>ธันวาคม</option>
+                                </select>
+                                <select name="year">
+                                    <option>2568</option>
+                                    <option>2569</option>
+                                </select>
+                                <br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <font face="tahoma" size="2" color="#606770">เพศ</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table align="center" border="1" width="100%">
+                                    <tr>
+                                        <td><input type="radio" name="gender" value="male"> ชาย </td>
+                                        <td><input type="radio" name="gender" value="female"> หญิง </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
-            <tr><td><input type="tel" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" size="30"required></td> </tr> 
-            <tr><td> <input type="password" placeholder="รหัสผ่านใหม่" size="30" required></td> </tr> 
 
-            <tr><td> 
-                <br> 
-                 <font face="tahoma" size="2" color="#606770" >วันเกิด</font>
-                <br> 
-                <select name="date"  placeholder="วัน" >
-                    <option>1</option>
-                    <option></option>
-                    <option></option>            
-                 </select>
-                <select name="date"  placeholder="เดือน" >
-                    <option>มกราคม</option>
-                    <option>กุมภาพันธ์</option>
-                    <option>มีนาคม</option> 
-                    <option>เมษายน</option> 
-                    <option>พฤษภาคม</option>               
-                    <option>มิถุนายน</option> 
-                    <option>กรกฏาคม</option> 
-                    <option>สิงหาคม</option> 
-                    <option>กันยายน</option> 
-                    <option>ตุลาคม</option> 
-                    <option>พฤศจิกายน</option> 
-                    <option>ธันวาคม</option> 
-                </select>
-                <select name="date"  placeholder="ปี" >
-                    <option>2568</option>
-                    <option>2569</option>
-                </select>
-                    <br>
-                <br> 
-            </td> </tr> 
- <tr> 
-                <br> 
-                 <tr><td><font face="tahoma" size="2" color="#606770" >เพศ</font><tr><td>
-      
-                    <tr>
-                         <td><input type="radio" name="gender" value="male"> ชาย 
-                         </td> 
-                         <td><input type="radio" name="gender" value="female"> หญิง 
-                         </td> 
-                    </tr>
+            <tr>
+                <td>
+                    <p>
+                        เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบาย คุกกี้ของเรา 
+                        คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา และสามารถเลือก ไม่รับได้ในภายหลัง
+                    </p>
+                </td>
+            </tr>
 
-                </tr> 
+            <tr>
+              <th <th colspan="2" style="background-color: green;"> <input type="submit" value="สมัคร">
+              </th>
                 
-                 
-         </table>
-        
-         <p>เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบาย คุกกี้ของเรา คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา และสามารถเลือก ไม่รับได้ในภายหลัง</p>
-         
-        </td>
-    </tr>
-       
-            <th colspan="2" style="background-color: green;"> <input type="submit" value="สมัคร"></th>
-            </form>
+            </tr>
+        </form>
     </table>
 
 </body>
