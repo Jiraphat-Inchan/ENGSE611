@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+/* Parent ที่ควบคุมฟอนต์ทั้งหมด */
+.parent {
+font-size: 16px;
+/* ค่าเริ่มต้น */
+border: 2px solid #ccc;
+padding: 20px;
+margin-top: 20px;
+}
+
+/* Child ใช้ em + เปลี่ยนตาม parent */
+.child-title {
+
+font-size: 2em;
+/* 2 x parent */
+color: #c0392b;
+font-weight: bold;
+}
+
+.child-text {
+font-size: 1.2em;
+/* 1.2 x parent */
+color: #2c3e50;
+}
+/* ตัวอย่างที่ใช้ px → ไม่ยืดหยุ่น */
+.fixed-text {
+font-size: 18px;
+color: #2980b9;
+}
+</style>
+
+
+<h2>Pseudo-class :hover</h2>
+<p>นำเมาส์มาวางบนข้อความนี้เพื่อดูเอฟเฟกต์</p>
+
+<h2>Attribute Selector [type="text"]</h2>
+<input type="text" placeholder="พิมพ์ข้อความที่นี่">
+
+<body>
+  
+
+</body>
+</html>
