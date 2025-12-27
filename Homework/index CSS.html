@@ -20,7 +20,7 @@
             margin: 0;
         }
 
-        #main-header {
+        main-header {
             background-color: #1a2a6c;
             color: white;
             padding: 40px 20px;
@@ -99,4 +99,77 @@
             <p>สวัสดีครับ ผมชื่อ <span class="highlight">นายจิราพัชร อินจันทร์</span> เป็นนักศึกษาของมหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา สาขาวิศวกรรมซอฟต์แวร์</p>
         </section>
 
-        <section id="skills
+        <section id="skills">
+            <h2>ทักษะและงานอดิเรก</h2>
+            <div style="display: flex; gap: 40px;">
+                <div>
+                    <h3>ทักษะ</h3>
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>C+ เบื้องต้น</li>
+                        <li>Sony Vegas</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>งานอดิเรก</h3>
+                    <ul>
+                        <li>วาดรูป</li>
+                        <li>ดูหนัง ดูอนิเมะ</li>
+                        <li>นอน</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>ประวัติย่อ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ปี</th>
+                        <th>รายละเอียด</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2567</td>
+                        <td>สำเร็จการศึกษาจากวิทยาลัยเทคนิคลำพูน</td> 
+                    </tr>
+                    <tr>
+                        <td>2568</td>
+                        <td>ปัจจุบันกำลังศึกษาอยู่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contact">
+            <h2>ติดต่อฉัน</h2>
+            <form action="#" method="post">
+                <p>
+                    <label>ชื่อ: </label>
+                    <input type="text" name="name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </p>
+                <p>
+                    <label>อีเมล:</label>
+                    <input type="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </p>
+                <p>
+                    <label>ข้อความ:</label><br>
+                    <textarea name="message" rows="4" required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+                </p>
+                <input type="submit" value="ส่งข้อมูล" style="background: #1a2a6c; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">
+            </form>
+            <p style="margin-top: 20px;">
+                <a href="https://www.facebook.com/jiraphat.inchan.73" target="_blank">Facebook</a> |
+                <a href="https://github.com/Jiraphat-Inchan" target="_blank">GitHub</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [จัดทำโดย: นายจิราพัชร อินจันทร์]</p>
+    </footer>
+
+</body>
+</html>
