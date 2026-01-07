@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์แนะนำตัว - จิราพัชร</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        #main-header {
+            background-color: #1a2a6c;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #f2a343;
+        }
+
+        .highlight {
+            color: #d9534f;
+            font-weight: bold;
+            background-color: #fff3cd;
+            padding: 2px 4px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1a2a6c;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>ยินดีต้อนรับสู่เว็บไซต์แนะนำตัว</h1>
+    </header>
+
+    <nav>
+        <a href="#profile">โปรไฟล์</a> | 
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+
+    <main>
+        <section id="profile">
+            <h2>ข้อมูลส่วนตัวเบื้องต้น</h2>
+            <img src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t1.6435-9/107737215_1061816344220415_6959267560520593625_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFHGp9Q4IN0tYRqqQduDDkRoAt8RLmDDsmgC3xEuYMOyZFCZl8FFMseOub2i5Z-iwJRa8dc7UTABHI7ldgXdDno&_nc_ohc=VYMtNMWjhpYQ7kNvwE7TVFg&_nc_oc=AdldXs39fCAElDo3yMftujh2dCr7i9_I4wZzCL-DK99OAqoVmj7t7Ao0XDx9Wg5Cucw6i5jkK-340NyBRD_YyUeu&_nc_zt=23&_nc_ht=scontent.fcnx3-1.fna&_nc_gid=LZyLBWewJthSQe7pLPWXAA&oh=00_Afk_-ISAH69NUxQlsdwLxZySQj9GesVywUZMBzvkw1EZBA&oe=695F9596" width="200" height="200" alt="รูปภาพของจิราพัชร">
+            
+            <p>สวัสดีครับ ผมชื่อ <span class="highlight">นายจิราพัชร อินจันทร์</span> เป็นนักศึกษาของมหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา สาขาวิศวกรรมซอฟต์แวร์</p>
+        </section>
+
+        <section id="skills">
+            <h2>ทักษะและงานอดิเรก</h2>
+            <div style="display: flex; gap: 40px;">
+                <div>
+                    <h3>ทักษะ</h3>
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>C+ เบื้องต้น</li>
+                        <li>Sony Vegas</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>งานอดิเรก</h3>
+                    <ul>
+                        <li>วาดรูป</li>
+                        <li>ดูหนัง ดูอนิเมะ</li>
+                        <li>นอน</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>ประวัติย่อ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ปี</th>
+                        <th>รายละเอียด</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2567</td>
+                        <td>สำเร็จการศึกษาจากวิทยาลัยเทคนิคลำพูน</td> 
+                    </tr>
+                    <tr>
+                        <td>2568</td>
+                        <td>ปัจจุบันกำลังศึกษาอยู่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contact">
+            <h2>ติดต่อฉัน</h2>
+            <form action="#" method="post">
+                <p>
+                    <label>ชื่อ: </label>
+                    <input type="text" name="name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </p>
+                <p>
+                    <label>อีเมล:</label>
+                    <input type="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </p>
+                <p>
+                    <label>ข้อความ:</label><br>
+                    <textarea name="message" rows="4" required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+                </p>
+                <input type="submit" value="ส่งข้อมูล" style="background: #1a2a6c; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">
+            </form>
+            <p style="margin-top: 20px;">
+                <a href="https://www.facebook.com/jiraphat.inchan.73" target="_blank">Facebook</a> |
+                <a href="https://github.com/Jiraphat-Inchan" target="_blank">GitHub</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [จัดทำโดย: นายจิราพัชร อินจันทร์]</p>
+    </footer>
+
+</body>
+</html>
