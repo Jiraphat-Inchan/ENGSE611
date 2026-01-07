@@ -51,27 +51,45 @@
             </div>
         </section>
 
-        <section id="experience">
-            <h2>ประวัติย่อ</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ปี</th>
-                        <th>รายละเอียด</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2567</td>
-                        <td>สำเร็จการศึกษาจากวิทยาลัยเทคนิคลำพูน</td> 
-                    </tr>
-                    <tr>
-                        <td>2568</td>
-                        <td>ปัจจุบันกำลังศึกษาอยู่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</td> 
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <section id="experience">
+    <h2>ประวัติย่อ</h2>
+    
+    <style>
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid black; 
+            padding: 8px; 
+            text-align: left; 
+        }
+        /* เพิ่มเติม: ตกแต่งแถวที่ใช้ colspan ให้เด่นขึ้น */
+        .table-header {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+    </style>
+
+    <table>
+        <tr>
+            <th colspan="2" class="table-header">ข้อมูลการศึกษาและสถานะปัจจุบัน</th>
+        </tr>
+        <tr>
+            <th style="width: 20%;">ปี</th>
+            <th>รายละเอียด</th>
+        </tr>
+        <tr>
+            <td>2567</td>
+            <td>สำเร็จการศึกษาจากวิทยาลัยเทคนิคลำพูน</td> 
+        </tr>
+        <tr>
+            <td>2568</td>
+            <td>ปัจจุบันกำลังศึกษาอยู่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</td> 
+        </tr>
+    </table>
+</section>
         
         <section id="contact">
             <h2>ติดต่อฉัน</h2>
