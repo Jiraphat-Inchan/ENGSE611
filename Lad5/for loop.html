@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Statistics</title>
+    <style>
+        /* จัดวางตำแหน่งให้อยู่กลางหน้าจอ */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5; /* สีพื้นหลังอ่อนๆ */
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        /* สร้างกรอบสี่เหลี่ยมตามภาพตัวอย่าง */
+        #output {
+            background-color: #e9effb; /* สีฟ้าอ่อนตามภาพ */
+            padding: 30px;
+            border-radius: 15px;      /* ขอบมน */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 450px;
+            line-height: 1.8;         /* ระยะห่างระหว่างบรรทัด */
+            font-size: 22px;          /* ขนาดตัวอักษร */
+            font-weight: bold;
+            color: #1a1a1a;
+            white-space: pre-line;    /* สำคัญ: เพื่อให้ \n ทำงาน */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="output">กำลังคำนวณ...</div>
+
+<script>
+    let numbers = [30, 27, 84, 36, 24, 2, 74, 37, 8, 50];
+    let min = numbers[0];
+    let max = numbers[0]; 
+    let sum = 0;
+
+    // ค้นหาค่า Min และ Max
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] < min) min = numbers[i];
+        if (numbers[i] > max) max = numbers[i];
+    }
+
+    // คำนวณผลรวม (Sum)
+    for (let i = 0; i < numbers.length; i++) { 
+        sum += numbers[i];
+    }
+
+    // คำนวณค่าเฉลี่ย
+    let avg = sum / numbers.length;
+
+    // แสดงผลบนหน้าเว็บ
+    document.getElementById("output").textContent =
+        "Numbers: " + numbers.join(" ") + "\n" +
+        "Min: " + min + "\n" +
+        "Max: " + max + "\n" +
+        "Sum: " + sum + "\n" +
+        "Average: " + avg;
+
+    // แสดงผลใน Console เพื่อตรวจสอบ
+    console.log("Min:", min);
+    console.log("Max:", max);
+    console.log("Sum:", sum);
+    console.log("Average:", avg);
+</script>
+</body>
+</html>
