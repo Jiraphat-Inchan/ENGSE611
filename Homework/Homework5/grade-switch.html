@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Check - Switch Statement</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button {
+            background: #28a9e0; color: white; border: none;
+            padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 16px;
+        }
+        #output {
+            margin-top: 10px; background: #111; color: white;
+            padding: 15px; border-radius: 10px; border-left: 5px solid #00ff66;
+            width: 300px; line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>การตรวจสอบเกรด (Switch Statement)</h2>
+    <button onclick="checkGrade()">Run Code</button>
+    <div id="output">ผลลัพธ์จะแสดงที่นี่...</div>
+
+    <script>
+    function checkGrade() {
+        let score = Math.floor(Math.random() * 101); 
+        let grade = "";
+        let result = "";
+        let description = ""; 
+
+        if (score >= 80) grade = "A";
+        else if (score >= 70) grade = "B";
+        else if (score >= 60) grade = "C";
+        else if (score >= 50) grade = "D";
+        else grade = "F";
+
+        switch (grade) {
+            case "A": description = "ยอดเยี่ยมมาก"; break;
+            case "B": description = "ดีมาก รักษามาตรฐานไว้"; break;
+            case "C": description = "ผ่านเกณฑ์ระดับดี"; break;
+            case "D": description = "พอใช้ แต่ควรพัฒนาเพิ่ม"; break;
+            case "F": description = "ต้องลงทะเบียนเรียนใหม่"; break;
+        }
+
+        result = (score >= 50) ? "ผ่าน" : "ไม่ผ่าน";
+
+        document.getElementById("output").innerHTML =
+            `คะแนนที่สุ่มได้: ${score} <br>` +
+            `เกรด: ${grade} <br>` +
+            `ผลสอบ: ${result} <br>` +
+            `คำอธิบาย: ${description}`;
+
+        console.log("คะแนนที่สุ่มได้:", score);
+        console.log("เกรด:", grade);
+        console.log("ผลสอบ:", result);
+        console.log("คำอธิบาย:", description);
+    }
+    </script>
+</body>
+</html>
